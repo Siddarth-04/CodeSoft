@@ -4,9 +4,11 @@ This repository contains the tasks assigned by CodeSoft. Each folder within this
 
 ## Contents
 
-- **Landing-Page**: Description of Task 1
-- **Portfolio-Website**: Description of Task 2
-- **Calculator**: Description of Task 3
-- *(Add additional tasks as necessary)*
+- **Landing-Page**: A Landing page using HTML and CSS, and use them to create columns, divide
+sections, arrange items, and add headers and footers.
+- **Portfolio-Website**: A personal portfolio using CSS and HTML.
+- **Calculator**: A basic calculator using CSS, HTML, and JavaScript, you'll need to implement an
+interactive interface with buttons for addition, subtraction, multiplication, and division
+operations.
 
 
