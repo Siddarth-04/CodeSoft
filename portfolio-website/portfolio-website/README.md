@@ -22,11 +22,12 @@ This is a personal portfolio website for **Siddarth**, showcasing skills, projec
   
 ## Technologies Used
 
-- **HTML5**: For structuring the web pages.
-- **CSS3**: For designing and making the site responsive.
-- **JavaScript**: For dynamic elements and interactions.
-- **GSAP**: For advanced animations and transitions.
-- **Font Awesome**: For icons in the website (e.g., social media icons).
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![FontAwesome](https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white)
+![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white)
+
 
 ## Setup and Installation
 
