@@ -76,16 +76,14 @@ Contributions are welcome! To contribute:
 ## Screenshots
 
 ### Home Section
-![Home Section](portfolio-website/portfolio-website/home-section.PNG)
+![Home Section](./)
 
 ### About Section
-![About Section](portfolio-website/portfolio-website/about-section.PNG)
+![About Section](./screenshots/about-section.png)
 
 ### Skills Section
-![Skills Section](screenshots/skills-section.png)
+![Skills Section](./screenshots/skills-section.png)
 
-### Contact Section
-![Contact Section](screenshots/contact-section.png)
 
 ## License
 
