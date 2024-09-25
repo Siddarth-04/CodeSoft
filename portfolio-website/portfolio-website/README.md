@@ -79,7 +79,7 @@ Contributions are welcome! To contribute:
 ![Home Section](portfolio-website/portfolio-website/home-section.PNG)
 
 ### About Section
-![About Section](screenshots/about-section.png)
+![About Section](portfolio-website/portfolio-website/about-section.PNG)
 
 ### Skills Section
 ![Skills Section](screenshots/skills-section.png)
