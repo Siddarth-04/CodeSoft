@@ -76,14 +76,16 @@ Contributions are welcome! To contribute:
 ## Screenshots
 
 ### Home Section
-![Home Section](./)
+![home-section](https://github.com/user-attachments/assets/3efbfe57-f1d3-4aab-a4ae-8954673abbb4)
 
 ### About Section
-![About Section](./screenshots/about-section.png)
+![about-section](https://github.com/user-attachments/assets/93a3592c-270d-4d2d-a0b7-ada4d4851e79)
 
 ### Skills Section
-![Skills Section](./screenshots/skills-section.png)
+![skills-section](https://github.com/user-attachments/assets/5a39bdb6-fe5b-4501-a881-4d700dc63526)
 
+### Contact Section
+![contact-section](https://github.com/user-attachments/assets/736b709c-0bf7-420c-878a-49175b354d9e)
 
 ## License
 
