@@ -1,0 +1,754 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap'); /* Import the Poppins font with various weights */
+
+/* Global Styles */
+* {
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+    text-decoration: none; /* Remove underline from links */
+    border: none; /* Remove default border on elements */
+    outline: none; /* Remove default outline when elements are focused */
+    font-family: 'Poppins', sans-serif; /* Set Poppins as the default font family */
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+html {
+    font-size: 62.5%; /* Set the base font size to 10px for easier rem calculations (1rem = 10px) */
+}
+
+body {
+    width: 100%; /* Make the body span the full width of the screen */
+    height: 100vh; /* Set body height to the full viewport height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the text color to white */
+}
+
+/* Header Styles */
+header {
+    margin-top: 20px; /* Add space at the top of the header */
+    position: fixed; /* Fix the header position so it stays at the top when scrolling */
+    top: 0; /* Align the header to the top of the page */
+    left: 0; /* Align the header to the left of the page */
+    width: 100%; /* Make the header span the full width of the page */
+    padding: 1rem 9%; /* Add padding inside the header */
+    background-color: transparent; /* Set the initial background of the header to transparent */
+    filter: drop-shadow(10px); /* Apply a drop shadow effect */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the logo and navigation */
+    align-items: center; /* Vertically align items in the center */
+    z-index: 100; /* Ensure the header is on top of other elements */
+}
+
+.logo {
+    font-size: 3rem; /* Set the logo font size */
+    color: #3498db; /* Set the logo color to light blue */
+    font-weight: 800; /* Make the logo font bold */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: 0.5s ease; /* Add a smooth transition effect */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slightly increase the size of the logo when hovered */
+}
+
+nav a {
+    font-size: 1.8rem; /* Set font size for navigation links */
+    color: #f7f7f7; /* Set the link text color to light grey */
+    margin-left: 4rem; /* Add space between each link */
+    font-weight: 500; /* Set the font weight for links */
+    transition: 0.3s ease; /* Add a smooth transition for hover effects */
+    border-bottom: 3px solid transparent; /* Add a transparent border for hover and active state effects */
+}
+
+nav a:hover,
+nav a.active {
+    color: #3498db; /* Change the link color to light blue on hover and when active */
+    border-bottom: 3px solid #3498db; /* Underline the active link or hovered link */
+}
+
+/* Responsive Styling for screens with a width less than 995px */
+@media(max-width:995px) {
+    nav {
+        position: absolute; /* Set navigation to absolute positioning */
+        display: none; /* Hide the navigation by default on small screens */
+        top: 0; /* Align the navigation to the top of the page */
+        right: 0; /* Align the navigation to the right */
+        width: 40%; /* Set the width of the navigation */
+        border-left: 3px solid #3498db; /* Add a light blue left border */
+        border-bottom: 3px solid #3498db; /* Add a light blue bottom border */
+        border-bottom-left-radius: 2rem; /* Round the bottom left corner */
+        padding: 1rem solid; /* Add padding to the navigation */
+        background-color: #161616; /* Set a dark background color */
+        border-top: 0.1rem solid rgba(0,0,0,0.1); /* Add a subtle top border */
+    }
+
+    nav.active {
+        display: block; /* Show the navigation when it has the active class */
+    }
+
+    nav a {
+        display: block; /* Stack the links vertically */
+        font-size: 2rem; /* Increase the font size of links */
+        margin: 3rem 0; /* Add space between each link */
+    }
+
+    nav a:hover,
+    nav a.active {
+        padding: 1rem; /* Add padding when a link is hovered or active */
+        border-radius: 0.5rem; /* Round the corners */
+        border-bottom: 0.5rem solid #3498db; /* Thicker underline on hover and active state */
+        color: #3498db; /* Change the color to light blue */
+    }
+}
+
+section {
+    min-height: 100vh; /* Ensure sections take up at least the full viewport height */
+    padding: 5rem 9% 5rem; /* Add padding to sections */
+}
+
+/* Home Section Styles */
+.home {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    gap: 8rem; /* Add space between the content */
+    background-color: black; /* Set the background color to black */
+}
+
+.home .home-content h1 {
+    font-size: 6rem; /* Set the font size for the main heading */
+    font-weight: 700; /* Set the font weight to bold */
+    line-height: 1.3; /* Set the line height */
+}
+
+span {
+    color: #3498db; /* Set the color of <span> elements to light blue */
+}
+
+.home-content h3 {
+    font-size: 4rem; /* Set the font size for subheadings */
+    margin-bottom: 1rem; /* Add space below the subheading */
+    font-weight: 700; /* Make the subheading bold */
+}
+
+.home-content p {
+    font-size: 1.6rem; /* Set the font size for paragraphs */
+}
+
+.home-img img {
+    position: relative; /* Use relative positioning for the image */
+    width: 32vw; /* Set the width as a percentage of the viewport */
+    animation: floatImage 4s ease-in-out infinite; /* Apply floating animation to the image */
+    border-radius: 50%; /* Make the image circular */
+    box-shadow: 0 0 25px solid #3498db; /* Add a light blue shadow around the image */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0); /* Start at the original position */
+    }
+    50% {
+        transform: translateY(-2.4rem); /* Float the image upward */
+    }
+    100% {
+        transform: translateY(0); /* Return to the original position */
+    }
+}
+
+.home-img {
+    border-radius: 50%; /* Make the container for the image circular */
+}
+
+.About > div {
+    display: flex; /* Use flexbox for the About section layout */
+    align-items: center; /* Center the items vertically */
+}
+
+.About > div > h1 {
+    font-size: 3rem; /* Set the font size for headings in the About section */
+}
+
+.home-img img {
+    position: relative; /* Relative positioning for the image */
+    width: 32vw; /* Set the image width as a percentage of the viewport */
+    border-radius: 50%; /* Make the image circular */
+    box-shadow: 0 0 25px solid #3498db; /* Apply a light blue shadow around the image */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: 0.2s linear; /* Smooth transition for hover effects */
+}
+
+.home-img img:hover {
+    font-size: 1.8rem; /* Increase the font size when hovered */
+    font-weight: 500; /* Make the font weight bolder */
+}
+
+.social-icons a {
+    display: inline-flex; /* Use inline-flex for social icons */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    width: 4rem; /* Set width of the social icons */
+    height: 4rem; /* Set height of the social icons */
+    background-color: transparent; /* Set the background to transparent */
+    border: 0.2rem solid #3498db; /* Add a light blue border */
+    font-size: 2rem; /* Set the font size for the icons */
+    border-radius: 50%; /* Make the icons circular */
+    margin: 3rem 1.5rem 3rem 0; /* Add margin around the icons */
+    transition: 0.3s ease; /* Add smooth transition effects */
+    color: #3498db; /* Set the icon color to light blue */
+}
+
+.social-icons a:hover {
+    color: #3498db; /* Keep the icon color the same on hover */
+    transform: scale(1.3) translateY(-5px); /* Scale and move the icon up on hover */
+    background-color: #0e0c0c; /* Set a dark background color on hover */
+    box-shadow: 0 0 25px #3498db; /* Add a light blue shadow on hover */
+}
+
+.btn {
+    display: inline-block; /* Set buttons to inline-block */
+    padding: 1rem 2.8rem; /* Add padding to the button */
+    background-color: rgb(10, 10, 10); /* Set the background color */
+    border-radius: 4rem; /* Make the button's corners round */
+    font-size: 1.6rem; /* Set the font size */
+    color: #3498db; /* Set the text color */
+    letter-spacing: 0.3rem; /* Add space between letters */
+    font-weight: 600; /* Make the text bold */
+    border: 2px solid #3498db; /* Add a light blue border */
+    transition: 0.3s ease; /* Smooth transition for hover effects */
+    cursor: pointer; /* Change the cursor to pointer on hover */
+}
+
+.btn:hover {
+    transform: scale3d(1.03); /* Slightly scale the button up on hover */
+    background-color: #3498db; /* Change the background color to light blue */
+    color: black; /* Change the text color to black */
+    box-shadow: 0 0 25px #3498db; /* Add a shadow around the button on hover */
+}
+
+.typing-text {
+    font-size: 34px; /* Set the font size for typing text */
+    font-weight: 600; /* Make the text bold */
+    /* Set minimum width for typing text */
+    min-width: 280px;
+}
+.typing-text span {
+    /* Set relative position for typing text span */
+    position: relative;
+}
+
+.typing-text span::before {
+    /* Set default content for typing text as "Programmer" */
+    content: "Programmer";
+    /* Set color for the text */
+    color: #3498db;
+    /* Apply animation to the text to change words */
+    animation: words 20s infinite;
+}
+
+.typing-text span::after {
+    /* Empty content for cursor effect */
+    content: "";
+    /* Set background color for cursor */
+    background-color: black;
+    /* Set position as absolute */
+    position: absolute;
+    /* Width of cursor with added margin */
+    width: calc(100% + 8px);
+    /* Full height for the cursor */
+    height: 100%;
+    /* Add border for cursor */
+    border-left: 3px solid black;
+    /* Position cursor slightly off */
+    right: -8;
+    /* Apply cursor blinking animation */
+    animation: cursor 0.6s infinite;
+}
+
+/* Keyframes for cursor blinking animation */
+@keyframes cursor {
+    to {
+        /* Set the border color of the cursor when blinking */
+        border-left: 3px solid #3498db;
+    }
+}
+
+/* Keyframes for changing words in the typing text */
+@keyframes words {
+    /* Show "Web Developer" for first 20% of animation */
+    0%, 20% {
+        content: "Web Developer";
+    }
+    /* Show "Programmer" for 21% to 40% */
+    21%, 40% {
+        content: "Programmer";
+    }
+    /* Show "Web Designer" from 41% to 60% */
+    41%, 60% {
+        content: "Web Designer";
+    }
+    /* Commented out other professions for now */
+    /* 61%, 80%{
+        content: "Youtuber";
+    }
+    81%, 100%{
+        content: "Script Writer";
+    } */
+}
+
+/* Responsive styling for devices with width less than 1000px */
+@media (max-width: 1000px) {
+    .home {
+        /* Adjust gap between elements in the home section */
+        gap: 4rem;
+    }
+}
+
+/* Responsive styling for devices with width less than 995px */
+@media(max-width:995px) {
+    .home {
+        /* Align items vertically for smaller screens */
+        flex-direction: column;
+        /* Add margin to the home section */
+        margin: 5rem 4rem;
+    }
+
+    .home .home-content h3 {
+        /* Set smaller font size for heading 3 in smaller screens */
+        font-size: 2.5rem;
+    }
+
+    .home-content h1 {
+        /* Adjust font size of heading 1 for smaller screens */
+        font-size: 5rem;
+    }
+
+    .home-img img {
+        /* Set width for home image in smaller screens */
+        width: 70vw;
+        /* Add margin on top of the image */
+        margin-top: 4rem;
+    }
+}
+
+/* About section styling */
+.about {
+    /* Center elements horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Add gap between elements */
+    gap: 2rem;
+    /* Set background color of the section */
+    background-color: black;
+}
+
+/* About image styling */
+.about-img img {
+    /* Set relative position for image */
+    position: relative;
+    /* Set width for the image */
+    width: 32vw;
+    /* Add border-radius for rounded corners */
+    border-radius: 20%;
+    /* Add box shadow with specific color */
+    box-shadow: 0 0 25px solid #3498db;
+    /* Add transition effect */
+    transition: 0.2s linear;
+    /* Make the image a pointer (clickable) */
+    cursor: pointer;
+}
+
+.about-img img:hover {
+    /* Set font size on hover */
+    font-size: 1.8rem;
+    /* Set font weight on hover */
+    font-weight: 500;
+}
+
+/* Section heading styling */
+.heading {
+    /* Center-align text */
+    text-align: center;
+    /* Set font size for section headings */
+    font-size: 4.3rem;
+}
+
+span {
+    /* Set blue color for spans */
+    color: #3498db;
+}
+
+/* About content heading 2 styling */
+.about-content h2 {
+    /* Align text to the left */
+    text-align: left;
+    /* Set line height for text */
+    line-height: 1.2;
+}
+
+/* About content heading 3 styling */
+.about-content h3 {
+    /* Set font size for heading 3 in about section */
+    font-size: 1.6rem;
+    /* Add margin to separate content */
+    margin: 2rem 0 3rem;
+}
+
+/* Skills section heading */
+.skills h2 {
+    /* Add bottom margin to the heading */
+    margin-bottom: 5rem;
+}
+
+/* Skills container */
+.skills-container {
+    /* Center elements inside the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Allow wrapping for responsive layout */
+    flex-wrap: wrap;
+    /* Add gap between skill boxes */
+    gap: 2rem;
+}
+
+/* Individual skills box styling */
+.skills-container .skills-box {
+    /* Flex-grow and set size */
+    flex: 1 1 30rem;
+    /* Set background color */
+    background: #3498db;
+    /* Add padding inside the box */
+    padding: 3rem 2rem 4rem;
+    /* Round the corners */
+    border-radius: 2rem;
+    /* Center-align text inside the box */
+    text-align: center;
+    /* Add border with a light color */
+    border: 0.2rem solid rgb(236, 225, 225);
+    /* Add transition for hover effect */
+    transition: 0.5s ease;
+}
+
+.skills-container .skills-box:hover {
+    /* Change border color on hover */
+    border-color: #3b2626;
+    /* Slightly scale up the box on hover */
+    transform: scale(1.02);
+}
+
+/* Icon styling inside skills box */
+.skills-container i {
+    /* Set black color for icons */
+    color: #000000;
+    /* Set font size for icons */
+    font-size: 7rem;
+}
+
+/* Heading inside skills box */
+.skills-box h3 {
+    /* Set font size for heading 3 inside skills box */
+    font-size: 2.6rem;
+}
+
+/* Paragraph inside skills box */
+.skills-box p {
+    /* Set font size for the paragraph */
+    font-size: 1.6rem;
+    /* Add margin to separate text */
+    margin: 1rem 0 3rem;
+}
+
+/* Contact Section Styles */
+.contact {
+    /* Set background color for the contact section */
+    background-color: #000000;
+    /* Add padding to the contact section */
+    padding: 60px 0;
+}
+
+.contact .heading {
+    /* Set font size for the heading */
+    font-size: 36px;
+    /* Set font weight for the heading */
+    font-weight: 700;
+    /* Add margin to the bottom */
+    margin-bottom: 20px;
+    /* Center-align the heading */
+    text-align: center;
+}
+
+.contact .heading span {
+    /* Set blue accent color for span */
+    color: #3498db;
+}
+
+/* Container for the contact section */
+.contact-container {
+    /* Set maximum width for the container */
+    max-width: 800px;
+    /* Center the container horizontally */
+    margin: 0 auto;
+    /* Flex container for layout */
+    display: flex;
+    /* Allow wrapping for responsive design */
+    flex-wrap: wrap;
+    /* Add space between elements */
+    justify-content: space-between;
+}
+
+/* Contact information styling */
+.contact-info {
+    /* Set basis for contact info section */
+    flex-basis: 40%;
+    /* Add right margin */
+    margin-right: 20px;
+}
+
+.contact-info h3 {
+    /* Set font size for the contact heading */
+    font-size: 30px;
+    /* Set font weight */
+    font-weight: 700;
+    /* Add margin to the bottom */
+    margin-bottom: 10px;
+}
+
+.contact-info ul {
+    /* Remove list style */
+    list-style: none;
+    /* Remove padding */
+    padding: 0;
+    /* Remove margin */
+    margin: 0;
+}
+
+.contact-info li {
+    /* Add margin to the bottom of each list item */
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    /* Set icon font size */
+    font-size: 20px;
+    /* Add right margin to the icon */
+    margin-right: 10px;
+    /* Set color for the icons */
+    color: #666;
+}
+
+/* Contact form styling */
+.contact-form {
+    /* Set flex-basis for the form section */
+    flex-basis: 50%;
+}
+
+.contact-form h3 {
+    /* Set font size for the form heading */
+    font-size: 30px;
+    /* Set font weight */
+    font-weight: 700;
+    /* Add margin to the bottom */
+    margin-bottom: 10px;
+}
+
+.contact-form form {
+    /* Flexbox layout for form fields */
+    display: flex;
+    /* Stack form fields vertically */
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    /* Add padding inside input and textarea */
+    padding: 10px;
+    /* Add margin to the bottom of the fields */
+    margin-bottom: 20px;
+    /* Set border style and color */
+    border: 1px solid #0a0a0a;
+    /* Add border radius for rounded corners */
+    border-radius: 5px;
+    /* Set full width for inputs */
+    width: 100%;
+}
+
+/* Submit button styling */
+.contact-form button[type="submit"] {
+    /* Set background color for submit button */
+    background-color: #3498db;
+    /* Set text color */
+    color: #050505;
+    /* Add padding inside the button */
+    padding: 10px 20px;
+    /* Remove border */
+    border: none;
+    /* Add border-radius for rounded corners */
+    border-radius: 5px;
+    /* Change cursor to pointer on hover */
+    cursor: pointer;
+}
+
+/* Hover effect for submit button */
+.contact-form button[type="submit"]:hover {
+    /* Change background color on hover */
+    background-color: #2980b9;
+}
+
+/* Footer Styles */
+footer {
+    /* Set background color for the footer */
+    background-color: #333;
+    /* Set text color inside the footer */
+    color: #fff;
+    /* Add padding to the footer */
+    padding: 30px 0;
+}
+
+/* Footer container */
+.footer-container {
+    /* Set maximum width for the footer container */
+    max-width: 1200px;
+    /* Center the container horizontally */
+    margin: 0 auto;
+    /* Flexbox layout for footer items */
+    display: flex;
+    /* Allow wrapping for responsive design */
+    flex-wrap: wrap;
+    /* Add space between footer items */
+    justify-content: space-between;
+}
+
+/* Top part of the footer */
+.footer-top {
+    /* Flexbox layout for the top section */
+    display: flex;
+    /* Space out the items */
+    justify-content: space-between;
+    /* Align items in the center */
+    align-items: center;
+    /* Add margin to the bottom */
+    margin-bottom: 20px;
+}
+
+/* Footer logo styling */
+.footer-logo {
+    /* Add right margin to the logo */
+    margin-right: 20px;
+}
+
+.footer-logo img {
+    /* Set logo width and height */
+    width: 100px;
+    height: 100px;
+    /* Make the logo circular */
+    border-radius: 50%;
+}
+
+/* Social media icons styling */
+.footer-social {
+    /* Flexbox layout for social icons */
+    display: flex;
+    /* Space out the icons */
+    justify-content: space-between;
+    /* Align icons in the center */
+    align-items: center;
+}
+
+.footer-social a {
+    /* Add right margin to social icons */
+    margin-right: 20px;
+    /* Set text color */
+    color: #fff;
+    /* Add transition effect */
+    transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+    /* Change color on hover */
+    color: #3498db;
+}
+
+/* Middle part of the footer */
+.footer-middle {
+    /* Flexbox layout for the middle section */
+    display: flex;
+    /* Space out the items */
+    justify-content: space-between;
+    /* Align items in the center */
+    align-items: center;
+    /* Add margin to the bottom */
+    margin-bottom: 20px;
+}
+
+/* Footer links section */
+.footer-links {
+    /* Add right margin to the links section */
+    margin-right: 20px;
+}
+
+.footer-links h3 {
+    /* Add bottom margin to the links heading */
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    /* Remove list style */
+    list-style: none;
+    /* Remove padding */
+    padding: 0;
+    /* Remove margin */
+    margin: 0;
+}
+
+.footer-links li {
+    /* Add margin to the bottom of each list item */
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    /* Set text color for links */
+    color: #fff;
+    /* Add transition effect */
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    /* Change color on hover */
+    color: #3498db;
+}
+
+/* Footer contact section */
+.footer-contact {
+    /* Add right margin to the contact section */
+    margin-right: 20px;
+}
+
+.footer-contact h3 {
+    /* Add bottom margin to the contact heading */
+    margin-bottom: 10px;
+}
+
+.footer-contact p {
+    /* Add bottom margin to contact paragraph */
+    margin-bottom: 10px;
+}
+
+/* Bottom part of the footer */
+.footer-bottom {
+    /* Center-align the text */
+    text-align: center;
+    /* Add margin to the top */
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    /* Add margin to the bottom of footer text */
+    margin-bottom: 10px;
+}
+
+
+   
+

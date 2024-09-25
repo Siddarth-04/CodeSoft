@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the HTML document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design meta tag -->
+    
+    <!-- Linking FontAwesome for icons (ensure you have it locally or use CDN) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <!-- Linking the main stylesheet -->
+    <link href="style.css" rel="stylesheet">
+    
+    <title>Portfolio Website</title> <!-- Title of the web page -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <a class="logo" href="#">Siddarth</a> <!-- Logo link -->
+        <nav>
+            <a class="active" href="#">Home</a> <!-- Active link for Home -->
+            <a href="#About">About</a> <!-- Link to About section -->
+            <a href="#skills">Skills</a> <!-- Link to Skills section -->
+            <a href="#Contact">Contact</a> <!-- Link to Contact section -->
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home">
+        <div class="home-img">
+            <img src="sid.jpg" alt="Siddarth Image" style="display: block; opacity: 1; visibility: visible;"> <!-- Image of Siddarth -->
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Siddarth</span></h1> <!-- Introduction heading -->
+            <h3 class="typing-text">I'm a <span></span></h3> <!-- Typing effect placeholder -->
+            <p>Hi, I am an aspiring programmer and web developer. In my free time, I play games, and I have an interest in bikes and cars.</p> <!-- Personal introduction -->
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/siddarth-naidu-6b2119281/" target="_blank"><i class="fab fa-linkedin"></i></a> <!-- LinkedIn icon -->
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a> <!-- GitHub icon -->
+                <a href="https://www.instagram.com/siddarth.04?igsh=MWtsMDN6a2JlbndkNw==" target="_blank"><i class="fab fa-instagram"></i></a> <!-- Instagram icon -->
+            </div>
+            <a class="btn" href="#">Resume</a> <!-- Resume button -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="About">
+        <div class="about-img">
+            <img src="sid.jpg" alt="Siddarth"> <!-- About section image -->
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2> <!-- About heading -->
+            <h3>Developer/Programmer</h3> <!-- Subheading for profession -->
+            <p>Hello! I'm a programming enthusiast who loves cars, bikes, and playing games. I am building my foundation in C/C++, Java, and Python. Whenever I have time, I ride bikes and cars, and I love doing those things apart from programming.</p> <!-- About content -->
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2> <!-- Skills heading -->
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class="fab fa-html5"></i> <!-- HTML icon -->
+                <h3>HTML</h3> <!-- HTML skill heading -->
+                <p>Experienced in structuring web pages with HTML.</p> <!-- HTML description -->
+            </div>
+            <div class="skills-box">
+                <i class="fab fa-css3-alt"></i> <!-- CSS icon -->
+                <h3>CSS</h3> <!-- CSS skill heading -->
+                <p>Experienced in designing websites using CSS.</p> <!-- CSS description -->
+            </div>
+            <div class="skills-box">
+                <i class="fab fa-python"></i> <!-- Python icon -->
+                <h3>Python</h3> <!-- Python skill heading -->
+                <p>Experienced in Python for web development and scripting.</p> <!-- Python description -->
+            </div>
+            <div class="skills-box">
+                <i class="fab fa-cuttlefish"></i> <!-- C/C++ icon -->
+                <h3>C/C++</h3> <!-- C/C++ skill heading -->
+                <p>Solid foundation in C and C++ programming languages.</p> <!-- C/C++ description -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="Contact">
+        <h2 class="heading">Get in <span>Touch</span></h2> <!-- Contact heading -->
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3> <!-- Contact information heading -->
+                <p>Feel free to reach out to me through any of the following channels:</p> <!-- Instructions for contact -->
+                <ul>
+                    <li><i class="fas fa-phone"></i> +91 1234567890</li> <!-- Phone number -->
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:siddarth.naidu@email.com">siddarth.naidu@email.com</a></li> <!-- Email link -->
+                    <li><i class="fas fa-map-marker-alt"></i> Banglore, India</li> <!-- Location -->
+                </ul>
+            </div>
+            <div class="contact-form">
+                <h3>Send a Message</h3> <!-- Form heading -->
+                <form>
+                    <input type="text" placeholder="Name" required> <!-- Name input field -->
+                    <input type="email" placeholder="Email" required> <!-- Email input field -->
+                    <textarea placeholder="Message" required></textarea> <!-- Message textarea -->
+                    <button type="submit">Send</button> <!-- Submit button -->
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="#Home">
+                        <img src="sid logo.jpeg" alt="Logo"> <!-- Footer logo -->
+                    </a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a> <!-- Facebook icon -->
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a> <!-- Twitter icon -->
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a> <!-- Instagram icon -->
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a> <!-- LinkedIn icon -->
+                </div>
+            </div>
+            <div class="footer-middle">
+                <div class="footer-links">
+                    <h3>Quick Links</h3> <!-- Quick Links heading -->
+                    <ul>
+                        <li><a href="#Home">Home</a></li> <!-- Quick link to Home -->
+                        <li><a href="#About">About</a></li> <!-- Quick link to About -->
+                        <li><a href="#Skills">Skills</a></li> <!-- Quick link to Skills -->
+                        <li><a href="#Contact">Contact</a></li> <!-- Quick link to Contact -->
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3> <!-- Contact Us heading -->
+                    <p>+91 1234567890</p> <!-- Contact phone number -->
+                    <p><a href="mailto:siddarth.naidu@email.com">siddarth.naidu@email.com</a></p> <!-- Contact email -->
+                    <p>Banglore, India</p> <!-- Contact location -->
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Siddarth Naidu. All rights reserved.</p> <!-- Copyright notice -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP and ScrollTrigger Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script> <!-- GSAP library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script> <!-- ScrollTrigger plugin -->
+
+    <script>
+        // Register the ScrollTrigger plugin with GSAP
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Home section animations
+        const tl = gsap.timeline(); // Create a new GSAP timeline
+        tl.from(".home .home-content h1", { 
+            duration: 1.5, 
+            opacity: 0, 
+            y: -50, 
+            ease: "power2.out" 
+        }) // Animate heading appearance
+        .from(".home .home-content h3", { 
+            duration: 1.2, 
+            opacity: 0, 
+            x: -100, 
+            ease: "power2.out" 
+        }, "-=1") // Animate subheading appearance
+        .from(".home .home-content p", { 
+            duration: 1.2, 
+            opacity: 0, 
+            y: 50, 
+            ease: "power2.out" 
+        }, "-=0.8") // Animate paragraph appearance
+        .from(".btn", { 
+            duration: 0, 
+            scale: 0.5, 
+            ease: "power2.out" 
+        }, "-=0.8") // Animate button scale
+        .from(".home-img img", {
+            duration: 0.1,
+            opacity: 0,
+            scale: 0.7,
+            ease: "power2.out",
+            delay: 0.8 // Animate image appearance
+        })
+        .to(".btn", {
+            scale: 1.1,
+            duration: 0.5,
+            repeat: -1,
+            yoyo: true,
+            ease: "power1.out" // Button pulsing effect
+        });
+
+        // About section animation
+        gsap.from(".about", {
+            duration: 1.5,
+            opacity: 0,
+            y: 50,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".about", // Trigger for animation
+                start: "top 80%", // When to start animation
+                toggleActions: "play none none reverse" // Animation actions
+            }
+        });
+        gsap.from(".about-img img", {
+            duration: 1.5,
+            opacity: 0,
+            x: -100,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".about",
+                start: "top 80%",
+                toggleActions: "play none none reverse" // Animation actions for image
+            }
+        });
+        gsap.from(".about-content", {
+            duration: 1.5,
+            opacity: 0,
+            x: 100,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".about",
+                start: "top 80%",
+                toggleActions: "play none none reverse" // Animation actions for content
+            }
+        });
+
+        // Skills section animation
+        gsap.from(".skills", {
+            duration: 1.5,
+            opacity: 0,
+            y: 50,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".skills", // Trigger for animation
+                start: "top 80%",
+                toggleActions: "play none none reverse" // Animation actions
+            }
+        });
+
+        // Contact section animation
+        gsap.from(".contact", {
+            duration: 1.5,
+            opacity: 0,
+            y: 50,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".contact", // Trigger for animation
+                start: "top 80%",
+                toggleActions: "play none none reverse" // Animation actions
+            }
+        });
+
+        // Change active link on scroll
+        const sections = document.querySelectorAll('section'); // Select all sections
+        const navLinks = document.querySelectorAll('nav a'); // Select all navigation links
+
+        function changeLink() {
+            let index = sections.length; // Get the number of sections
+
+            // Loop through sections to determine the active one
+            while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+            // Remove active class from all links and add to the current section's link
+            navLinks.forEach((link) => link.classList.remove('active'));
+            navLinks[index].classList.add('active');
+        }
+
+        changeLink(); // Initial call to set the active link
+        window.addEventListener('scroll', changeLink); // Update active link on scroll
+    </script>
+    <script src="portfolio-website/JS/main.js"></script> <!-- Local JavaScript file -->
+</body>
+</html>
