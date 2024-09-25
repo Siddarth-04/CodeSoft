@@ -76,7 +76,7 @@ Contributions are welcome! To contribute:
 ## Screenshots
 
 ### Home Section
-![Home Section](screenshots/home-section.png)
+![Home Section](portfolio-website/portfolio-website/home-section.PNG)
 
 ### About Section
 ![About Section](screenshots/about-section.png)
