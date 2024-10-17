@@ -31,10 +31,8 @@ This repository contains the **Coca-Cola Landing Page** project, built using **H
 ## Screenshots
 
 ### Desktop View
-![Desktop View Screenshot](screenshots/desktop-view.png)
-
-### Mobile View (Menu)
-![Mobile View Screenshot](screenshots/mobile-view.png)
+![Desktop View Screenshot](![home](https://github.com/user-attachments/assets/dc8706f1-1d17-4f58-a887-1fd9ea3f4e9d)
+)
 
 ### Drinks Section
 ![Drinks Section Screenshot](screenshots/drinks-section.png)
