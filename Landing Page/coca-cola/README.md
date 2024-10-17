@@ -6,7 +6,6 @@ This repository contains the **Coca-Cola Landing Page** project, built using **H
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Screenshots](#screenshots)
-- [How to Use](#how-to-use)
 - [Icons Used](#icons-used)
 - [Contact](#contact)
 
@@ -46,20 +45,6 @@ This repository contains the **Coca-Cola Landing Page** project, built using **H
 ### Contact Section
 ![contact section](https://github.com/user-attachments/assets/afabcde6-90cc-44df-945d-e9a9b0fcd0fc)
 
-
-
-> **Note:** Ensure you save the screenshots in a `screenshots` folder at the root level of this repository.
-
-## How to Use
-
-1. Clone the repository to your local machine:
-    ```bash
-    git clone https://github.com/Siddarth-04/Landing Page/coca-cola.git
-    ```
-
-2. Open the `index.html` file in any web browser to view the page.
-
-3. Customize the content and styling as per your needs.
 
 ## Icons Used
 
