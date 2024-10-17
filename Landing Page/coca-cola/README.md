@@ -30,18 +30,23 @@ This repository contains the **Coca-Cola Landing Page** project, built using **H
 
 ## Screenshots
 
-### Desktop View
-![Desktop View Screenshot](![home](https://github.com/user-attachments/assets/dc8706f1-1d17-4f58-a887-1fd9ea3f4e9d)
-)
+### Home-Section
+![home](https://github.com/user-attachments/assets/dc8706f1-1d17-4f58-a887-1fd9ea3f4e9d)
+
 
 ### Drinks Section
-![Drinks Section Screenshot](screenshots/drinks-section.png)
+![drinks](https://github.com/user-attachments/assets/e62718fb-f05a-4135-870e-b9a0ee030db8)
 
-### Stores Section
-![Stores Section Screenshot](screenshots/stores-section.png)
 
-### Franchise Section
-![Franchise Section Screenshot](screenshots/franchise-section.png)
+### Stores  Section
+![stores](https://github.com/user-attachments/assets/c4f5627f-88ec-4079-8eb6-cb167b095e70)
+
+
+
+### Contact Section
+![contact section](https://github.com/user-attachments/assets/afabcde6-90cc-44df-945d-e9a9b0fcd0fc)
+
+
 
 > **Note:** Ensure you save the screenshots in a `screenshots` folder at the root level of this repository.
 
