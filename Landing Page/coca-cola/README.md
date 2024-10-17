@@ -54,7 +54,7 @@ This repository contains the **Coca-Cola Landing Page** project, built using **H
 
 1. Clone the repository to your local machine:
     ```bash
-    git clone https://github.com/your-username/coca-cola-landing-page.git
+    git clone https://github.com/Siddarth-04/Landing Page/coca-cola.git
     ```
 
 2. Open the `index.html` file in any web browser to view the page.
