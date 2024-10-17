@@ -6,7 +6,6 @@ This is a personal portfolio website for **Siddarth**, showcasing skills, projec
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Setup and Installation](#setup-and-installation)
 - [Project Structure](#project-structure)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -28,26 +27,6 @@ This is a personal portfolio website for **Siddarth**, showcasing skills, projec
 ![FontAwesome](https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white)
 ![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white)
 
-
-## Setup and Installation
-
-To set up and run this project locally, follow these steps:
-
-1. Clone the repository:
-
-    ```bash
-    git clone https://github.com/yourusername/portfolio-website.git
-    ```
-
-2. Navigate to the project directory:
-
-    ```bash
-    cd portfolio-website
-    ```
-
-3. Open the `index.html` file in your browser or run a local server (e.g., using [VS Code Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)).
-
-4. (Optional) To edit the project, you can use any text editor or IDE such as **Visual Studio Code**.
 
 ## Project Structure
 
