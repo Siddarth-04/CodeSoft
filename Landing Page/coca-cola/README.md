@@ -23,8 +23,8 @@ This repository contains the **Coca-Cola Landing Page** project, built using **H
 
 ## Technologies Used
 
-- **HTML5**
-- **CSS3**
+- **HTML**
+- **CSS**
 - **JavaScript**
 - **Font Awesome** for icons
 
