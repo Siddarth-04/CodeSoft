@@ -7,8 +7,7 @@ This repository contains a **basic calculator** web application built with **HTM
 - [Technologies Used](#technologies-used)
 - [Screenshots](#screenshots)
 - [Icons Used](#icons-used)
-- [How to Use](#how-to-use)
-- [Contact](#contact)
+
 
 ## Features
 
@@ -27,7 +26,8 @@ This repository contains a **basic calculator** web application built with **HTM
 ## Screenshots
 
 ### Calculator Layout
-![Calculator Screenshot](screenshots/calculator-layout.png)
+![calculator](https://github.com/user-attachments/assets/4c6937fc-f5ea-44c6-84a1-31a193d025e1)
+
 
 
 
@@ -52,23 +52,3 @@ To further enhance the appearance, you could integrate **Font Awesome** or any o
     <button class="operator" data-value="DEL"><i class="fas fa-backspace"></i> DEL</button>
     <button class="operator" data-value="="><i class="fas fa-equals"></i> =</button>
     ```
-
-## How to Use
-
-1. Clone this repository to your local machine:
-    ```bash
-    git clone https://github.com/Siddarth-04/calculator.git
-    ```
-
-2. Open the `index.html` file in any web browser.
-
-3. Use the buttons on the calculator to perform arithmetic operations.
-
-4. Customize the CSS (`style.css`) and JavaScript (`script.js`) files to add more features or change the design.
-
-## Contact
-
-For any queries, feel free to contact me via email:
-
-- **Email**: [youremail@example.com](mailto:youremail@example.com)
-
